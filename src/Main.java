@@ -25,7 +25,7 @@ public class Main {
             case "2":
                 // EXERCICIO 2
                 System.out.println("\nBem vindo ao IMC\n");
-                System.out.println("Digite sua altura: ");
+                System.out.println("Digite sua altura separando por vírgula metros e centímetros: ");
                 var altura = scanner.nextDouble();
                 System.out.println("Digite seu peso: ");
                 var peso = scanner.nextDouble();
@@ -47,6 +47,37 @@ public class Main {
                 break;
             case "3":
                 // EXERCICIO 3
+                // Escreva um código que o usuário entre com um primeiro número, um segundo
+                // número maior que o primeiro e escolhe entre a opção par e impar, com isso o
+                // código deve informar todos os números pares ou ímpares (de acordo com a
+                // seleção inicial) no intervalo de números informados, incluindo os números
+                // informados e em ordem decrescente;
+                System.out.println("\nBem vindo - Par ou Ímpar no intervalo de números informados\n");
+                System.out.println("Digite um número: ");
+                var numero1 = scanner.nextInt();
+                System.out.println("Digite um número maior que o primeiro: ");
+                var numero2 = scanner.nextInt();
+                System.out.println(
+                        "Você quer selecionar os números pares ou ímpares do intervalo informado? digite 1 para IMPAR ou 2 para PAR': ");
+                var opcao = scanner.nextInt();
+
+                System.err.println("Seguem abaixo os números em ordem decrescente do intervalo informado:\n");
+               
+                if (opcao == 1) {
+                    for (int i = numero2; i >= numero1; i--) {
+                        if (i % 2 != 0) {
+                            System.out.println(i);
+                        }
+                    }
+                } else if (opcao == 2) {
+                    for (int i = numero2; i >= numero1; i--) {
+                        if (i % 2 == 0) {
+                            System.out.println(i);
+                        }
+                    }
+                } else {
+                    System.out.println("Opção inválida - " + opcao);
+                }
                 break;
             case "4":
                 // EXERCICIO 4
