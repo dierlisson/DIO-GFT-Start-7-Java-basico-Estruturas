@@ -5,7 +5,6 @@ public class Main {
 
         var scanner = new Scanner(System.in);
 
-    
         System.out.println(
                 "Exercícios\n1- Escreva um código onde o usuário entra com um número e seja gerada a tabuada de 1 até 10 desse número;\n2- Escreva um código onde o usuário entra com sua altura e peso, seja feito o calculo do seu IMC;\n3- Escreva um código que o usuário entre com um primeiro número, um segundo número maior que o primeiro e escolhe entre a opção par e impar, com isso o código deve informar todos os números pares ou ímpares (de acordo com a seleção inicial) no intervalo de números informados, incluindo os números informados e em ordem decrescente;\n4- Escreva um código onde o usuário informa um número inicial, posteriormente irá informar outros N números, a execução do código irá continuar até que o número informado dividido pelo primeiro número tenha resto diferente de  0 na divisão, números menores que o primeiro número devem ser ignorados.\n");
         System.out.println("Digite o número do exercício que deseja executar:");
@@ -14,6 +13,7 @@ public class Main {
         switch (execicio) {
             case "1":
                 // EXERCICIO 1
+                System.out.println("\nBem vindo a Tabuada\n");
                 System.out.println("Digite um número: ");
                 var numero = scanner.nextInt();
                 System.out.println("O número digitado foi: " + numero);
@@ -24,6 +24,26 @@ public class Main {
                 break;
             case "2":
                 // EXERCICIO 2
+                System.out.println("\nBem vindo ao IMC\n");
+                System.out.println("Digite sua altura: ");
+                var altura = scanner.nextDouble();
+                System.out.println("Digite seu peso: ");
+                var peso = scanner.nextDouble();
+                var imc = peso / (altura * altura);
+                System.out.println("Seu IMC é: " + imc);
+                if (imc <= 18.5) {
+                    System.out.println("Abaixo do peso");
+                } else if (imc > 18.5 && imc < 25.0) {
+                    System.out.println("Peso ideal");
+                } else if (imc >= 25.0 && imc < 30.0) {
+                    System.out.println("Levemente acima do peso");
+                } else if (imc >= 30.0 && imc < 35.0) {
+                    System.out.println("Obesidade Grau I");
+                } else if (imc >= 35.0 && imc < 40.0) {
+                    System.out.println("Obesidade Grau II (Severa)");
+                } else {
+                    System.out.println("Obesidade III (Mórbida)");
+                }
                 break;
             case "3":
                 // EXERCICIO 3
