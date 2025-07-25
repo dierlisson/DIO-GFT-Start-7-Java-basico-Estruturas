@@ -76,7 +76,16 @@ public class Main {
                 break;
             case "4":
                 // EXERCICIO 4
+                System.out.println("\nBem vindo - Resto zero \n");
 
+                System.out.println("Digite um número: ");
+                var num1 = scanner.nextInt();
+                var num2 = 0;
+                do {
+                    System.out.println("\nDigite outro número: ");
+                    num2 = scanner.nextInt();
+                } while ((num1 % num2) != 0);
+                System.err.println("\nO resto da divisão de " + num1 +" por "+num2+ " é igual a " + (num1 % num2)+".");
                 break;
 
             default:
