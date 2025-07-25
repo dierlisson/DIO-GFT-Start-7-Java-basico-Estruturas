@@ -1,5 +1,5 @@
 
-# Exercícios - Fundamentos da Linguagem de Programação Java
+# Exercícios - Estruturas de Controle em Java
 
 Este repositório contém uma atividade prática desenvolvida em Java, com o objetivo de exercitar a entrada de dados via terminal e manipulação de informações básicas. O código apresenta um menu com **4 exercícios** que podem ser escolhidos pelo usuário para execução.
 
@@ -43,7 +43,7 @@ Este repositório contém uma atividade prática desenvolvida em Java, com o obj
 
 ## 🧑‍💻 Autor
 
-Atividade desenvolvida como exercício proposto pelo professor da DIO no bootcamp GFT Start #7 - Java, no curso **Fundamentos da Linguagem de Programação Java**.
+Atividade desenvolvida como exercício proposto pelo professor da DIO no bootcamp GFT Start #7 - Java, no curso **Estruturas de Controle em Java**.
 
 ---
 
