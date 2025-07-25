@@ -81,11 +81,19 @@ public class Main {
                 System.out.println("Digite um número: ");
                 var num1 = scanner.nextInt();
                 var num2 = 0;
+                var result = 0;
                 do {
-                    System.out.println("\nDigite outro número: ");
+                    System.out.println("\nDigite outro número para verificação: ");
                     num2 = scanner.nextInt();
-                } while ((num1 % num2) != 0);
-                System.err.println("\nO resto da divisão de " + num1 +" por "+num2+ " é igual a " + (num1 % num2)+".");
+                    while (num2 < num1) {
+                        System.err.printf("Informe um número maior que %s:  ", num1);
+                        num2 = scanner.nextInt();
+                    }
+                    result = num2 % num1;
+                    System.err.printf("\n%s %% %s = %s\n", num2, num1, result);
+                } while (result != 0);
+                System.err.printf(
+                        "\nO resto da divisão de %s por %s é igual a %s.", num2, num1, result);
                 break;
 
             default:
