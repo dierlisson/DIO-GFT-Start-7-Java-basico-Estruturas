@@ -1,35 +1,60 @@
 
-# Exercícios 
+# Exercícios - Fundamentos da Linguagem de Programação Java
 
-1. Escreva um código onde o usuário entra com um número e seja gerada a tabuada de 1 até 10 desse número;
+Este repositório contém uma atividade prática desenvolvida em Java, com o objetivo de exercitar a entrada de dados via terminal e manipulação de informações básicas. O código apresenta um menu com **4 exercícios** que podem ser escolhidos pelo usuário para execução.
 
-2. Escreva um código onde o usuário entra com sua altura e peso, seja feito o calculo do seu IMC(IMC = peso/(altura * altura)) e seja exibida a mensagem de acordo com o resultado:
-   - Se for menor ou igual a 18,5 "Abaixo do peso";
-   - se for entre 18,6 e 24,9 "Peso ideal";
-   - Se for entre 25,0 e 29,9 "Levemente acima do peso";
-   - Se for entre 30,0 e 34,9 "Obesidade Grau I";
-   - Se for entre 35,0 e 39,9 "Obesidade Grau II (Severa)";
-   - Se for maior ou igual a 40,0 "Obesidade III (Mórbida)";
+## 📋 Requisitos
 
-3. Escreva um código que o usuário entre com um primeiro número, um segundo número maior que o primeiro e escolhe entre a opção par e impar, com isso o código deve informar todos os números pares ou ímpares (de acordo com a seleção inicial) no intervalo de números informados, incluindo os números informados e em ordem decrescente;
+- Java JDK 8 ou superior  
+- Terminal ou IDE compatível com execução de aplicações Java
 
-4. Escreva um código onde o usuário informa um número inicial, posteriormente irá informar outros N números, a execução do código irá continuar até que o número informado dividido pelo primeiro número tenha resto diferente de  0 na divisão, números menores que o primeiro número devem ser ignorados
+## 🚀 Como Executar
 
-## Getting Started
+1. Clone este repositório ou copie o código-fonte para um arquivo chamado `Main.java`.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+2. Compile o código usando o terminal:
+   ```bash
+   javac Main.java
+   ```
 
-## Folder Structure
+3. Execute o programa:
+   ```bash
+   java Main
+   ```
 
-The workspace contains two folders by default, where:
+4. Será exibido um menu com os seguintes exercícios:
+   ```
+   Exercícios
+   1- Escreva um código onde o usuário entra com um número e seja gerada a tabuada de 1 até 10 desse número;
+   2- Escreva um código onde o usuário entra com sua altura e peso, seja feito o cálculo do seu IMC;
+   3- Escreva um código que o usuário entre com um primeiro número, um segundo número maior que o primeiro e escolha entre a opção par ou ímpar. O programa irá exibir todos os números do tipo escolhido no intervalo informado, em ordem decrescente;
+   4- Escreva um código onde o usuário informa um número inicial, e posteriormente irá informar outros N números. A execução continuará até que o número informado não seja múltiplo do primeiro número. Números menores que o número inicial serão ignorados.
+   ```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+5. Digite o número do exercício desejado e siga as instruções no terminal.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 📌 Observações
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- O programa utiliza a estrutura `switch` para controle do exercício selecionado.
+- O cálculo de IMC no exercício 2 segue os parâmetros da OMS.
+- O exercício 3 lida com intervalos numéricos e classificação par/ímpar.
+- O exercício 4 demonstra lógica de repetição com verificação de múltiplos.
+- Certifique-se de fornecer dados válidos conforme solicitado pelo terminal.
 
-## Dependency Management
+## 🧑‍💻 Autor
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Atividade desenvolvida como exercício proposto pelo professor da DIO no bootcamp GFT Start #7 - Java, no curso **Fundamentos da Linguagem de Programação Java**.
+
+---
+
+```java
+// Estrutura básica usada no código:
+switch (execicio) {
+    case "1": // Tabuada
+    case "2": // Cálculo do IMC
+    case "3": // Números pares/ímpares no intervalo
+    case "4": // Verificação de múltiplos
+    default:  // Tratamento de opção inválida
+}
+```
+---

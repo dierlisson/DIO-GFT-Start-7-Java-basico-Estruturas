@@ -94,6 +94,27 @@ public class Main {
                 } while (result != 0);
                 System.err.printf(
                         "\nO resto da divisão de %s por %s é igual a %s.", num2, num1, result);
+
+                /*
+                 * 
+                 * //Resolução do professor:
+                 * 
+                 * System.err.println("Informe um número");
+                 * var number = scanner.nextInt();
+                 * while (true) {
+                 * System.err.println("Informe o número para verificação");
+                 * var toVerify = scanner.nextInt();
+                 * if (toVerify < number) {
+                 * System.err.printf("Informe um número maior que %s", number);
+                 * continue;
+                 * }
+                 * var result = toVerify % number;
+                 * System.err.printf("%s %% %s = %s\n", toVerify, number, result);
+                 * if (result != 0)
+                 * break;
+                 * }
+                 */
+                
                 break;
 
             default:
